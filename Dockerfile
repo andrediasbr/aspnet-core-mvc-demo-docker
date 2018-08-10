@@ -12,7 +12,7 @@ COPY . .
 RUN dotnet build episodio-01.csproj -c Release -o /app
 
 FROM build AS publish
-RUN dotnet publish episodio-01.csproj -c Release -o /app
+RUN dotnet publish episodio-01.csproj -c Release -o /app`
 
 FROM base AS final
 WORKDIR /app
